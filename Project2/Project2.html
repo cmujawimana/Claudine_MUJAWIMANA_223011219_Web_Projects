@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <h2 align="center">STUDENT REGISTRATION FORM</h2>
+
+    <form action="connect.php" method="post">
+
+        <table align="center" cellpadding="10">
+
+            <tr>
+                <td>FIRST NAME</td>
+                <td><input type="text" name="first_name"></td>
+            </tr>
+
+            <tr>
+                <td>LAST NAME</td>
+                <td><input type="text" name="last_name"></td>
+            </tr>
+
+            <tr>
+                <td>DATE OF BIRTH</td>
+                <td>
+                    <select name="day">
+                        <option>Day</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+
+                    <select name="month">
+                        <option>Month</option>
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Apr</option>
+                        <option>May</option>
+                        <option>Jun</option>
+                        <option>Jul</option>
+                        <option>Aug</option>
+                        <option>Sep</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                        <option>Dec</option>
+                    </select>
+
+                    <select name="year">
+                        <option>Year</option>
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                        <option>2005</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>EMAIL ID</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+
+            <tr>
+                <td>MOBILE NUMBER</td>
+                <td><input type="text" name="mobile"></td>
+            </tr>
+
+            <tr>
+                <td>GENDER</td>
+                <td>
+                    <input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>ADDRESS</td>
+                <td><textarea name="address"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>CITY</td>
+                <td><input type="text" name="city"></td>
+            </tr>
+
+            <tr>
+                <td>PIN CODE</td>
+                <td><input type="text" name="pin"></td>
+            </tr>
+
+            <tr>
+                <td>STATE</td>
+                <td><input type="text" name="state"></td>
+            </tr>
+
+            <tr>
+                <td>COUNTRY</td>
+                <td>
+                    <select name="country">
+                        <option>Rwanda</option>
+                        <option>Kenya</option>
+                        <option>Uganda</option>
+                        <option>Tanzania</option>
+                        <option>India</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>HOBBIES</td>
+                <td>
+                    <input type="checkbox" name="hobby[]" value="Drawing">Drawing
+                    <input type="checkbox" name="hobby[]" value="Singing">Singing
+                    <input type="checkbox" name="hobby[]" value="Dancing">Dancing
+                </td>
+            </tr>
+
+        </table>
+
+        <!-- QUALIFICATION SECTION -->
+
+        <table align="center" cellpadding="5">
+
+            <tr>
+                <td valign="top"><b>QUALIFICATION</b></td>
+
+                <td>
+                    <table cellpadding="5">
+
+                        <tr>
+                            <th>Sl.No</th>
+                            <th>Examination</th>
+                            <th>Board</th>
+                            <th>Percentage</th>
+                            <th>Year of Passing</th>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Class X</td>
+                            <td><input type="text" name="board1"></td>
+                            <td><input type="text" name="per1"></td>
+                            <td><input type="text" name="year1"></td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Class XII</td>
+                            <td><input type="text" name="board2"></td>
+                            <td><input type="text" name="per2"></td>
+                            <td><input type="text" name="year2"></td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Graduation</td>
+                            <td><input type="text" name="board3"></td>
+                            <td><input type="text" name="per3"></td>
+                            <td><input type="text" name="year3"></td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Masters</td>
+                            <td><input type="text" name="board4"></td>
+                            <td><input type="text" name="per4"></td>
+                            <td><input type="text" name="year4"></td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <!-- COURSES -->
+
+        <table align="center">
+
+            <tr>
+                <td>COURSES APPLIED FOR</td>
+                <td>
+                    <input type="radio" name="course" value="BCA">BCA
+                    <input type="radio" name="course" value="BCom">B.Com
+                    <input type="radio" name="course" value="BSc">B.Sc
+                    <input type="radio" name="course" value="BA">B.A
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+
+</html>
